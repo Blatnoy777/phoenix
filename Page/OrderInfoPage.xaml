@@ -1,0 +1,56 @@
+﻿<Page x:Class="PhoenixPR.Page.OrderInfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PhoenixPR.Page"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="900"
+      Title="OrderInfoPage">
+
+    <Grid Background="#FF2C78BF">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="87*" />
+            <RowDefinition Height="99*" />
+            <RowDefinition Height="371*" />
+            <RowDefinition Height="342*" />
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#FF1678E2" HorizontalAlignment="Left" 
+                   Height="646" Margin="10,3.8,0,0" Stroke="Black" StrokeThickness="6"
+                   VerticalAlignment="Top" Width="880" Grid.RowSpan="3" Grid.Row="1"/>
+        <TextBox FontSize="40" Background="{x:Null}" Margin="99,0,74,0.2" BorderBrush="{x:Null}" Foreground="White">
+
+        </TextBox>
+        <TextBlock Margin="175,98.8,195,226.6" Grid.Row="1" FontSize="45" Grid.RowSpan="2" Foreground="White">
+            Информация о заказе
+        </TextBlock>
+        <TextBlock Margin="34,75.6,504,243.6" Grid.Row="2" FontSize="33" Foreground="White">
+           ФИО пользователя:
+        </TextBlock>
+        <TextBlock Margin="34,132.6,504,189.6" Grid.Row="2" FontSize="33" Foreground="White">
+            Телефон пользователя:
+        </TextBlock>
+        <TextBlock Margin="34,186.6,504,135.6" Grid.Row="2" FontSize="33" Foreground="White">
+            Почта пользователя:
+        </TextBlock>
+        <TextBlock Margin="34,255.6,504,66.6" Grid.Row="2" FontSize="33" Foreground="White">
+           Дата оформления:
+        </TextBlock>
+        <TextBlock Margin="34,309.6,504,9.6" Grid.Row="2" FontSize="33" Foreground="White" RenderTransformOrigin="0.515,5.367">
+            Конечная стоимость:
+        </TextBlock>
+        <Button x:Name="CheckOurOrderBtn" 
+                Click="CheckOurOrderBtn_Click" Grid.Row ="3" 
+                Margin="10,237.4,504,10" FontSize="40" Background="#FF3574F1" 
+                BorderBrush="#FF9C9644" Foreground="#FFFFFEFE" BorderThickness="4"
+                Content="ОФОРМИТЬ"/>
+        <Button x:Name="DeclineOrderBtn" Click="DeclineOrderBtn_Click" Grid.Row ="3" 
+                Margin="506,237.4,10,10" FontSize="40" Background="#FF3574F1" 
+                BorderBrush="#FF9C9644" Foreground="#FFFFFEFE" BorderThickness="4" 
+                Content="ОТМЕНИТЬ"/>
+
+
+
+    </Grid>
+</Page>

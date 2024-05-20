@@ -1,0 +1,26 @@
+﻿<Window x:Class="PhoenixPR.Page.EnterRecoverePswrdPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PhoenixPR.Page"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="600"
+      Title="EnterRecoverePswrdPage">
+
+    <Grid Background="#FF2C78BF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="166*" />
+            <RowDefinition Height="162*" />
+            <RowDefinition Height="173*" />
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="50" Margin="151,10,121,87.6" Text="Введите код" Foreground="White"/>
+        <TextBlock Text="Код:" FontSize="50" Margin="10,40.4,432,49.2" Grid.Row="1" Foreground="White"/>
+
+
+        <TextBox x:Name="EmailTxtBox" FontSize="50" Margin="151,40.4,34,49.2" Grid.Row="1" />
+        <Button Name="NewCodeSendBtn" Click="NewCodeSendBtn_Click"  Grid.Row ="2" Margin="70,44.8,70,32" FontSize="40" Background="#FF3574F1" BorderBrush="#FF9C9644" Foreground="#FFFFFEFE" BorderThickness="4">
+            ОТПРАВИТЬ
+        </Button>
+    </Grid>
+</Window>
